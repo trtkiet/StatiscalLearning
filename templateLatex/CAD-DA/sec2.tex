@@ -1,0 +1,153 @@
+\section{Problem Setup} \label{sec:problem_setup}
+
+%\vspace{-5pt}
+Let us consider two random vectors
+%
+\begin{align*} 
+	\bm X^s &= (X^s_1, ..., X^s_{n_s})^\top = \bm \mu^s  + \bm \veps^s, \quad \bm \veps^s \sim \NN(\bm 0, \Sigma^s), 
+	%\label{eq:random_X_s}
+	\\ 
+	\bm X^t &= (X^t_1, ..., X^t_{n_t})^\top = \bm \mu^t  + \bm \veps^t, \quad \bm \veps^t \sim \NN(\bm 0, \Sigma^t), 
+	%\label{eq:random_X_t}.
+\end{align*}
+%
+where $n_s$ and $n_t$ are the number of instances in the source and target domains, $\bm \mu^s$ and $\bm \mu^t$ are unknown signals, $\bm \veps^s$ and $\bm \veps^t$ are the Gaussian noise vectors with the covariance matrices $\Sigma^s$ and $\Sigma^t$ assumed to be known or estimable from independent data. 
+%
+We assume that the number of instances in the target domain is limited, i.e., $n_t$ is much smaller than $n_s$.
+%
+The goal is to statistically test the results of AD after DA.
+
+\paragraph{Optimal Transport (OT)-based DA \cite{flamary2016optimal}.} 
+%
+Let us define the cost matrix as 
+%
+\begin{align*} %\label{eq:cost_matrix_l_2}
+	C(\bm X^s, \bm X^t) 
+	& = \big[(X_i^s - X_j^t)^2 \big]_{ij} \in \RR^{n_s \times n_t}.
+\end{align*}
+%
+The OT problem between the source and target domain is then defined as 
+\begin{align} \label{eq:ot_problem}
+		\hat{T} = \argmin \limits_{T \geq 0} & ~ \langle T, C(\bm X^s, \bm X^t)\rangle \\ 
+		\text{s.t.} ~~& ~ T \bm{1}_{n_t} = \bm 1_{n_s}/{n_s},  T^\top \bm{1}_{n_s} = \bm 1_{n_t}/{n_t} \nonumber,
+\end{align}
+%
+where $\bm{1}_n \in \RR^n$ is the vector whose elements are set to $1$.
+%
+After obtaining the optimal transportation matrix $\hat{T}$, source instances are transported in the target domain.
+%
+The transformation $\tilde{\bm X}^s$ of $\bm X^s$ is defined as:
+\begin{align*}
+	\tilde{\bm X}^s 
+		= n_s \hat{T} \bm X^t.
+\end{align*} 
+%
+More details are provided in Sec 3.3 of \cite{flamary2016optimal}. 
+
+\paragraph{Anomaly detection.} After transforming the data from source domain to the target domain, we apply an AD algorithm $\cA$ on $\big \{ \tilde{\bm X}^s, \bm X^t \big \}$ to obtain a set $\cO$ of indices of anomalies in the target domain:
+%
+\begin{align*}
+		\cA: \left \{ \tilde{\bm X}^s, \bm X^t \right \} 
+		\mapsto
+		\cO \in [n_t].
+\end{align*}
+%
+In this paper, we used the Median Absolute Deviation (MAD) as an example of the AD algorithm. 
+%
+%This is because it is still commonly-used, easy to implement and interpret compared to other AD algorithms like the isolation forest, one-class SVM, and Local Outlier Factor.
+%
+Our proposed CAD-DA framework is not specialized for a specific AD algorithm but can also be applied to other AD algorithms (see \S \ref{subsec:identification_cZ} for more details).
+
+\paragraph{Statistical inference and decision making with a $p$-value.} To statistically quantifying the significance of the detected anomalies, we consider the statistical test on the following null and alternative hypotheses:
+%
+\begin{align*} %\label{eq:hypotheses}
+	{\rm H}_{0, j}: \mu^t_j = \bar{\bm \mu}^t_{- \cO}
+	\quad
+	\text{vs.}
+	\quad 
+	{\rm H}_{1, j}: \mu^t_j \neq \bar{\bm \mu}^t_{- \cO}, \quad 
+	\forall j \in \cO,
+\end{align*}
+%
+where 
+%
+\[
+	\bar{\bm \mu}^t_{- \cO} = 
+	\frac{1}{n_t - |\cO|} \sum \limits_{\ell \in [n_t] \setminus \cO}
+	\mu^t_\ell.
+\]
+%
+In other words, our goal is to test if each of the detected anomalies $j \in \cO$ is truly deviated from the remaining data points after removing the set of anomalies $\cO$.
+
+To test the hypotheses, the test statistic is defined as:
+\begin{align}\label{eq:test_statistic}
+	 T_j 
+	 = X_j^t - \bar{\bm X}^t_{- \cO} 
+	 = \bm \eta_j^\top {\bm X^s \choose \bm X^t }, 
+\end{align}
+%
+where $\bm \eta_j$ is the direction of the test statistic: 
+%
+\begin{align} \label{eq:eta_j}
+\bm \eta_j = 
+\begin{pmatrix}
+	\bm 0^{s} \\ 
+	\bm e^{t}_j - \frac{1}{n_t - |\cO|}
+	\bm e^{t}_{-\cO}
+\end{pmatrix},
+\end{align}
+$\bm 0^{s} \in \RR^{n_s}$ represents a vector where all entries are set to 0, 
+$\bm e^{t}_j \in \RR^{n_t}$ is a vector in which the $j^{\rm th}$ entry is set to $1$, and $0$ otherwise,
+$\bm e^{t}_{-\cO} \in \RR^{n_t}$ is a vector in which the $j^{\rm th}$ entry is set to $0$ if $j \in \cO$, and $1$ otherwise.
+
+After obtaining the test statistic in \eq{eq:test_statistic}, we need to compute a $p$-value.
+%
+Given a significance level $\alpha \in [0, 1]$, e.g., 0.05, we reject the null hypothesis ${\rm H}_{0, j}$ and assert that $X_j^t$ is an anomaly if the $p$-value $ \leq \alpha$.
+%
+Conversely, if the $p$-value $ > \alpha$, we infer that there is insufficient evidence to conclude that $X_j^t$ is an anomaly.
+
+\paragraph{Challenge of computing a valid $p$-value.}
+The traditional (naive) $p$-value, which does not properly consider the effect of DA and AD, is defined as:
+%
+\begin{align*}
+	p^{\rm naive}_j = 
+	\mathbb{P}_{\rm H_{0, j}} 
+	\Bigg ( 
+		\left | \bm \eta_j^\top {\bm X^s \choose \bm X^t } \right |
+		\geq 
+		\left | \bm \eta_j^\top {\bm X^s_{\rm obs} \choose \bm X^t_{\rm obs} } \right |
+	\Bigg ), 
+\end{align*}
+%
+where $\bm X^s_{\rm obs}$ and $\bm X^t_{\rm obs}$ are the observations of the random vectors $\bm X^s$ and $\bm X^t$, respectively.
+%
+If the vector $\bm \eta_j$ is independent of the DA and AD algorithms, the naive $p$-value is valid in the sense that 
+%
+\begin{align} \label{eq:valid_p_value}
+	\mathbb{P} \Big (
+	\underbrace{p_j^{\rm naive} \leq \alpha \mid {\rm H}_{0, j} \text{ is true }}_{\text{a false positive}}
+	\Big) = \alpha, ~~ \forall \alpha \in [0, 1],
+\end{align} 
+% 
+i.e., the probability of obtaining a false positive is controlled under a certain level of guarantee.
+%
+However, in our setting, the vector $\bm \eta_j$ actually depends on the DA and AD.
+%
+The property of a valid $p$-value in \eq{eq:valid_p_value} is no longer satisfied.
+%
+Hence, the naive $p$-value is \emph{invalid}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

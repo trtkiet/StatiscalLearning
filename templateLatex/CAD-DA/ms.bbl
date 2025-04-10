@@ -1,0 +1,293 @@
+\begin{thebibliography}{10}
+
+\bibitem{aggarwal2005abnormality}
+C.~C. Aggarwal.
+\newblock On abnormality detection in spuriously populated data streams.
+\newblock In {\em Proceedings of the 2005 siam international conference on data
+  mining}, pages 80--91. SIAM, 2005.
+
+\bibitem{aggarwal2017outlier}
+C.~C. Aggarwal.
+\newblock {\em Outlier Analysis}.
+\newblock Springer, 2017.
+
+\bibitem{andrews1974robust}
+D.~F. Andrews.
+\newblock A robust method for multiple linear regression.
+\newblock {\em Technometrics}, 16(4):523--531, 1974.
+
+\bibitem{avci2021review}
+O.~Avci, O.~Abdeljaber, S.~Kiranyaz, M.~Hussein, M.~Gabbouj, and D.~J. Inman.
+\newblock A review of vibration-based damage detection in civil structures:
+  From traditional methods to machine learning and deep learning applications.
+\newblock {\em Mechanical systems and signal processing}, 147:107077, 2021.
+
+\bibitem{baktashmotlagh2013unsupervised}
+M.~Baktashmotlagh, M.~T. Harandi, B.~C. Lovell, and M.~Salzmann.
+\newblock Unsupervised domain adaptation by domain invariant projection.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 769--776, 2013.
+
+\bibitem{chen2019valid}
+S.~Chen and J.~Bien.
+\newblock Valid inference corrected for outlier removal.
+\newblock {\em Journal of Computational and Graphical Statistics}, pages 1--12,
+  2019.
+
+\bibitem{chen2022selective}
+Y.~T. Chen and D.~M. Witten.
+\newblock Selective inference for k-means clustering.
+\newblock {\em arXiv preprint arXiv:2203.15267}, 2022.
+
+\bibitem{das2021fast}
+D.~Das, V.~N.~L. Duy, H.~Hanada, K.~Tsuda, and I.~Takeuchi.
+\newblock Fast and more powerful selective inference for sparse high-order
+  interaction model.
+\newblock {\em arXiv preprint arXiv:2106.04929}, 2021.
+
+\bibitem{du2020damage}
+Y.~Du, S.~Zhou, X.~Jing, Y.~Peng, H.~Wu, and N.~Kwok.
+\newblock Damage detection techniques for wind turbine blades: A review.
+\newblock {\em Mechanical Systems and Signal Processing}, 141:106445, 2020.
+
+\bibitem{duy2022quantifying}
+V.~N.~L. Duy, S.~Iwazaki, and I.~Takeuchi.
+\newblock Quantifying statistical significance of neural network-based image
+  segmentation by selective inference.
+\newblock {\em Advances in Neural Information Processing Systems},
+  35:31627--31639, 2022.
+
+\bibitem{duy2022exact}
+V.~N.~L. Duy and I.~Takeuchi.
+\newblock Exact statistical inference for time series similarity using dynamic
+  time warping by selective inference.
+\newblock {\em arXiv preprint arXiv:2202.06593}, 2022.
+
+\bibitem{duy2021more}
+V.~N.~L. Duy and I.~Takeuchi.
+\newblock More powerful conditional selective inference for generalized lasso
+  by parametric programming.
+\newblock {\em The Journal of Machine Learning Research}, 23(1):13544--13580,
+  2022.
+
+\bibitem{duy2021exact}
+V.~N.~L. Duy and I.~Takeuchi.
+\newblock Exact statistical inference for the wasserstein distance by selective
+  inference.
+\newblock {\em Annals of the Institute of Statistical Mathematics},
+  75(1):127--157, 2023.
+
+\bibitem{duy2020computing}
+V.~N.~L. Duy, H.~Toda, R.~Sugiyama, and I.~Takeuchi.
+\newblock Computing valid p-value for optimal changepoint by selective
+  inference using dynamic programming.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2020.
+
+\bibitem{fithian2014optimal}
+W.~Fithian, D.~Sun, and J.~Taylor.
+\newblock Optimal inference after model selection.
+\newblock {\em arXiv preprint arXiv:1410.2597}, 2014.
+
+\bibitem{fithian2015selective}
+W.~Fithian, J.~Taylor, R.~Tibshirani, and R.~Tibshirani.
+\newblock Selective sequential model selection.
+\newblock {\em arXiv preprint arXiv:1512.02565}, 2015.
+
+\bibitem{flamary2016optimal}
+R.~Flamary, N.~Courty, D.~Tuia, and A.~Rakotomamonjy.
+\newblock Optimal transport for domain adaptation.
+\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell}, 1:1--40, 2016.
+
+\bibitem{gao2022selective}
+L.~L. Gao, J.~Bien, and D.~Witten.
+\newblock Selective inference for hierarchical clustering.
+\newblock {\em Journal of the American Statistical Association}, pages 1--11,
+  2022.
+
+\bibitem{gong2013connecting}
+B.~Gong, K.~Grauman, and F.~Sha.
+\newblock Connecting the dots with landmarks: Discriminatively learning
+  domain-invariant features for unsupervised domain adaptation.
+\newblock In {\em International conference on machine learning}, pages
+  222--230. PMLR, 2013.
+
+\bibitem{huber1973robust}
+P.~J. Huber et~al.
+\newblock Robust regression: asymptotics, conjectures and monte carlo.
+\newblock {\em The annals of statistics}, 1(5):799--821, 1973.
+
+\bibitem{hyun2018exact}
+S.~Hyun, M.~G’sell, and R.~J. Tibshirani.
+\newblock Exact post-selection inference for the generalized lasso path.
+\newblock {\em Electronic Journal of Statistics}, 12(1):1053--1097, 2018.
+
+\bibitem{hyun2018post}
+S.~Hyun, K.~Lin, M.~G'Sell, and R.~J. Tibshirani.
+\newblock Post-selection inference for changepoint detection algorithms with
+  application to copy number variation data.
+\newblock {\em arXiv preprint arXiv:1812.03644}, 2018.
+
+\bibitem{inoue2017post}
+S.~Inoue, Y.~Umezu, S.~Tsubota, and I.~Takeuchi.
+\newblock Post clustering inference for heterogeneous data.
+\newblock {\em IEICE Technical Report; IEICE Tech. Rep.}, 117(293):69--76,
+  2017.
+
+\bibitem{jewell2022testing}
+S.~Jewell, P.~Fearnhead, and D.~Witten.
+\newblock Testing for a change in mean after changepoint detection.
+\newblock {\em Journal of the Royal Statistical Society Series B: Statistical
+  Methodology}, 84(4):1082--1104, 2022.
+
+\bibitem{lee2016exact}
+J.~D. Lee, D.~L. Sun, Y.~Sun, and J.~E. Taylor.
+\newblock Exact post-selection inference, with application to the lasso.
+\newblock {\em The Annals of Statistics}, 44(3):907--927, 2016.
+
+\bibitem{lee2015evaluating}
+J.~D. Lee, Y.~Sun, and J.~E. Taylor.
+\newblock Evaluating the statistical significance of biclusters.
+\newblock {\em Advances in neural information processing systems}, 28, 2015.
+
+\bibitem{liu2018more}
+K.~Liu, J.~Markovic, and R.~Tibshirani.
+\newblock More powerful post-selection inference, with application to the
+  lasso.
+\newblock {\em arXiv preprint arXiv:1801.09037}, 2018.
+
+\bibitem{loftus2014significance}
+J.~R. Loftus and J.~E. Taylor.
+\newblock A significance test for forward stepwise model selection.
+\newblock {\em arXiv preprint arXiv:1405.3920}, 2014.
+
+\bibitem{Makowski2021neurokit}
+D.~Makowski, T.~Pham, Z.~J. Lau, J.~C. Brammer, F.~Lespinasse, H.~Pham,
+  C.~Sch{\"o}lzel, and S.~H.~A. Chen.
+\newblock Neurokit2: A python toolbox for neurophysiological signal processing.
+\newblock {\em Behavior Research Methods}, Feb 2021.
+
+\bibitem{maronna2019robust}
+R.~A. Maronna, R.~D. Martin, V.~J. Yohai, et~al.
+\newblock {\em Robust statistics: theory and methods (with R)}.
+\newblock John Wiley \& Sons, 2019.
+
+\bibitem{miwa2023valid}
+D.~Miwa, D.~V.~N. Le, and I.~Takeuchi.
+\newblock Valid p-value for deep learning-driven salient region.
+\newblock In {\em Proceedings of the 11th International Conference on Learning
+  Representation}, 2023.
+
+\bibitem{neufeld2022tree}
+A.~C. Neufeld, L.~L. Gao, and D.~M. Witten.
+\newblock Tree-values: selective inference for regression trees.
+\newblock {\em Journal of Machine Learning Research}, 23(305):1--43, 2022.
+
+\bibitem{pan1995multiple}
+J.-X. Pan and K.-T. Fang.
+\newblock Multiple outlier detection in growth curve model with unstructured
+  covariance matrix.
+\newblock {\em Annals of the Institute of Statistical Mathematics},
+  47(1):137--153, 1995.
+
+\bibitem{pan2010domain}
+S.~J. Pan, I.~W. Tsang, J.~T. Kwok, and Q.~Yang.
+\newblock Domain adaptation via transfer component analysis.
+\newblock {\em IEEE transactions on neural networks}, 22(2):199--210, 2010.
+
+\bibitem{pourhabibi2020fraud}
+T.~Pourhabibi, K.-L. Ong, B.~H. Kam, and Y.~L. Boo.
+\newblock Fraud detection: A systematic literature review of graph-based
+  anomaly detection approaches.
+\newblock {\em Decision Support Systems}, 133:113303, 2020.
+
+\bibitem{rousseeuw2005robust}
+P.~J. Rousseeuw and A.~M. Leroy.
+\newblock {\em Robust regression and outlier detection}, volume 589.
+\newblock John wiley \& sons, 2005.
+
+\bibitem{rugamer2020inference}
+D.~R{\"u}gamer and S.~Greven.
+\newblock Inference for l 2-boosting.
+\newblock {\em Statistics and computing}, 30(2):279--289, 2020.
+
+\bibitem{saenko2010adapting}
+K.~Saenko, B.~Kulis, M.~Fritz, and T.~Darrell.
+\newblock Adapting visual category models to new domains.
+\newblock In {\em Computer Vision--ECCV 2010: 11th European Conference on
+  Computer Vision, Heraklion, Crete, Greece, September 5-11, 2010, Proceedings,
+  Part IV 11}, pages 213--226. Springer, 2010.
+
+\bibitem{srivastava1998outliers}
+M.~S. Srivastava and D.~von Rosen.
+\newblock Outliers in multivariate regression models.
+\newblock {\em Journal of Multivariate Analysis}, 65(2):195--208, 1998.
+
+\bibitem{sugiyama2021more}
+K.~Sugiyama, V.~N. Le~Duy, and I.~Takeuchi.
+\newblock More powerful and general selective inference for stepwise feature
+  selection using homotopy method.
+\newblock In {\em International Conference on Machine Learning}, pages
+  9891--9901. PMLR, 2021.
+
+\bibitem{sugiyama2021valid}
+R.~Sugiyama, H.~Toda, V.~N.~L. Duy, Y.~Inatsu, and I.~Takeuchi.
+\newblock Valid and exact statistical inference for multi-dimensional multiple
+  change-points by selective inference.
+\newblock {\em arXiv preprint arXiv:2110.08989}, 2021.
+
+\bibitem{suzumura2017selective}
+S.~Suzumura, K.~Nakagawa, Y.~Umezu, K.~Tsuda, and I.~Takeuchi.
+\newblock Selective inference for sparse high-order interaction models.
+\newblock In {\em Proceedings of the 34th International Conference on Machine
+  Learning-Volume 70}, pages 3338--3347. JMLR. org, 2017.
+
+\bibitem{tanizaki2020computing}
+K.~Tanizaki, N.~Hashimoto, Y.~Inatsu, H.~Hontani, and I.~Takeuchi.
+\newblock Computing valid p-values for image segmentation by selective
+  inference.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 9553--9562, 2020.
+
+\bibitem{tibshirani2016exact}
+R.~J. Tibshirani, J.~Taylor, R.~Lockhart, and R.~Tibshirani.
+\newblock Exact post-selection inference for sequential regression procedures.
+\newblock {\em Journal of the American Statistical Association},
+  111(514):600--620, 2016.
+
+\bibitem{tsukurimichi2022conditional}
+T.~Tsukurimichi, Y.~Inatsu, V.~N.~L. Duy, and I.~Takeuchi.
+\newblock Conditional selective inference for robust regression and outlier
+  detection using piecewise-linear homotopy continuation.
+\newblock {\em Annals of the Institute of Statistical Mathematics},
+  74(6):1197--1228, 2022.
+
+\bibitem{umezu2017selective}
+Y.~Umezu and I.~Takeuchi.
+\newblock Selective inference for change point detection in multi-dimensional
+  sequences.
+\newblock {\em arXiv preprint arXiv:1706.00514}, 2017.
+
+\bibitem{wong2002rule}
+W.-K. Wong, A.~Moore, G.~Cooper, and M.~Wagner.
+\newblock Rule-based anomaly pattern detection for detecting disease outbreaks.
+\newblock In {\em AAAI/IAAI}, pages 217--223, 2002.
+
+\bibitem{yamada2018post}
+M.~Yamada, Y.~Umezu, K.~Fukumizu, and I.~Takeuchi.
+\newblock Post selection inference with kernels.
+\newblock In {\em International conference on artificial intelligence and
+  statistics}, pages 152--160. PMLR, 2018.
+
+\bibitem{yang2016selective}
+F.~Yang, R.~F. Barber, P.~Jain, and J.~Lafferty.
+\newblock Selective inference for group-sparse linear models.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  2469--2477, 2016.
+
+\bibitem{zaman2001econometric}
+A.~Zaman, P.~J. Rousseeuw, and M.~Orhan.
+\newblock Econometric applications of high-breakdown robust regression
+  techniques.
+\newblock {\em Economics Letters}, 71(1):1--8, 2001.
+
+\end{thebibliography}

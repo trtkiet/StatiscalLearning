@@ -1,1 +1,1 @@
-DNN For Anormaly Detection
+Symbolic Regression for feature selection and anomoly detection

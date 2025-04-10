@@ -1,0 +1,19 @@
+\vspace{-5pt}
+
+\section{Discussion} \label{sec:discussion}
+
+\vspace{-5pt}
+We propose a novel setup of testing the results of AD after DA and introduce a method to compute a valid $p$-value for conducting the statistical test.
+%
+We believe that this study stands as a significant step toward controllable machine leaning under DA. 
+%
+Some open questions remain. 
+%
+Our method currently does not support MMD-based DAs \cite{gong2013connecting, pan2010domain, baktashmotlagh2013unsupervised} or metric learning-based DA \cite{saenko2010adapting} because the selection event of these methods are more complicated than OT-based DA.
+%
+A potential solution could involve a sampling-based approach to approximate the truncation region for $p$-value computation.
+%
+Similarly, our method is applicable to AD algorithms with analytically characterizable event, such as MAD and  robust regression methods. 
+%
+Extending the proposed method to more complex AD algorithms would represent a valuable contribution.
+

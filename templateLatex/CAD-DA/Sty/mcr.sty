@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% theorems
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newtheorem{defi}{Definition}
+%\newtheorem{prop}[defi]{Proposition}
+%\newtheorem{lemm}[defi]{Lemma}
+%\newtheorem{theo}[defi]{Theorem}
+%\newtheorem{coro}[defi]{Corollary}
+%\newtheorem{exam}[defi]{Example}
+%\newtheorem{algo}[defi]{Algorithm}
+%\newtheorem{claim}[defi]{Claim}
+%\newcommand{\theoproof}[1]{\noindent{\bf (Proof of Theorem #1) }}
+%\newcommand{\propproof}[1]{\noindent{\bf (Proof of Proposition #1) }}
+%\newcommand{\lemmproof}[1]{\noindent{\bf (Proof of Lemma #1) }\\}
+%\newcommand{\lemmproofn}[1]{\noindent{\bf (Proof of Lemma #1) }}
+%\newcommand{\coroproof}[1]{\noindent{\bf (Proof of Corollary #1) }\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% math symbols and commands
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\eq}[1]{(\ref{#1})}
+\newcommand{\mtx}[2]{\left[\begin{array}{#1} #2 \end{array}\right]}
+\newcommand{\mycase}[1]{\left\{\begin{array}{ll} #1 \end{array} \right.}
+\newcommand{\lw}[1]{\smash{\lower2.ex\hbox{#1}}}
+\newcommand{\zero}{\mathbf{0}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\pd}[2]{{\frac{\partial #1}{\partial #2}}}
+\newcommand{\lA}{\leftarrow} % leftarrow
+
+% maru and sikaku
+\def\Mmaru#1{{\ooalign{\hfil#1\/\hfil\crcr\raise.167ex\hbox{\mathhexbox 20D}}}}
+\def\maru#1{\textcircled{\small#1}}
+\def\sikaku#1{\fbox{\small#1}}
+\def\maruMini#1{\textcircled{\scriptsize#1}}
+\def\sikakuMini#1{\fbox{\scriptsize#1}}
+
+%brackets
+\newcommand{\inner}[2]{\left\langle #1,#2 \right\rangle}
+\newcommand{\rbr}[1]{\left(#1\right)}
+\newcommand{\sbr}[1]{\left[#1\right]}
+\newcommand{\cbr}[1]{\left\{#1\right\}}
+\newcommand{\nbr}[1]{\left\|#1\right\|}
+\newcommand{\abr}[1]{\left|#1\right|}
+
+%sets
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\MM}{\mathbb{M}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\CC}{{\rm Cov}}
+\newcommand{\II}{\bm{{\rm I}}}
+
+% mathbb
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bJ}{\mathbb{J}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bL}{\mathbb{L}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bU}{\mathbb{U}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bW}{\mathbb{W}}
+\newcommand{\bX}{\mathbb{X}}
+\newcommand{\bY}{\mathbb{Y}}
+\newcommand{\bZ}{\mathbb{Z}}
+
+\newcommand{\cA}{{\mathcal A}}
+\newcommand{\cB}{{\mathcal B}}
+\newcommand{\cC}{{\mathcal C}}
+\newcommand{\cD}{{\mathcal D}}
+\newcommand{\cE}{{\mathcal E}}
+\newcommand{\cF}{{\mathcal F}}
+\newcommand{\cG}{{\mathcal G}}
+\newcommand{\cH}{{\mathcal H}}
+\newcommand{\cI}{{\mathcal I}}
+\newcommand{\cJ}{{\mathcal J}}
+\newcommand{\cK}{{\mathcal K}}
+\newcommand{\cL}{{\mathcal L}}
+\newcommand{\cM}{{\mathcal M}}
+\newcommand{\cN}{{\mathcal N}}
+\newcommand{\cO}{{\mathcal O}}
+\newcommand{\cP}{{\mathcal P}}
+\newcommand{\cQ}{{\mathcal Q}}
+\newcommand{\cR}{{\mathcal R}}
+\newcommand{\cS}{{\mathcal S}}
+\newcommand{\cT}{{\mathcal T}}
+\newcommand{\cU}{{\mathcal U}}
+\newcommand{\cV}{{\mathcal V}}
+\newcommand{\cW}{{\mathcal V}}
+\newcommand{\cX}{{\mathcal X}}
+\newcommand{\cY}{{\mathcal Y}}
+\newcommand{\cZ}{{\mathcal Z}}
+
+% epsilon
+\newcommand{\veps}{\varepsilon}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% colors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
+\newcommand{\siro}[1]{\textcolor[rgb]{1,1,1}{#1}}
+\newcommand{\black}[1]{\textcolor[rgb]{0,0,0}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\redbf}[1]{\textcolor{red}{\bf #1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\bluebf}[1]{\textcolor{blue}{\bf #1}}
+\newcommand{\darkblue}[1]{\textcolor[rgb]{0.0,0.0,0.7}{#1}}
+\newcommand{\darkblueA}[1]{\textcolor[rgb]{0.0,0.0,0.5}{#1}}
+\newcommand{\green}[1]{\textcolor[rgb]{0.0,0.5,0.0}{#1}}
+\newcommand{\greenbf}[1]{\textcolor[rgb]{0.0,0.5,0.0}{\bf #1}}
+\newcommand{\purple}[1]{\textcolor[rgb]{0.5,0.0,0.5}{#1}}
+\newcommand{\purplebf}[1]{\textcolor[rgb]{0.5,0.0,0.5}{\bf #1}}
+\newcommand{\lightgreen}[1]{\textcolor[rgb]{0.75,1.0,0.75}{#1}}
+\newcommand{\orange}[1]{\textcolor[rgb]{1.00,0.50,0.00}{#1}}
+\newcommand{\brown}[1]{\textcolor[rgb]{0.40,0.20,0.00}{#1}}
+\newcommand{\bluegreen}[1]{\textcolor[rgb]{0.00, 0.50, 0.50}{#1}}
+\newcommand{\white}[1]{\textcolor[rgb]{1,1,1}{#1}}

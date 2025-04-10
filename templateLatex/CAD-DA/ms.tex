@@ -1,0 +1,163 @@
+\pdfoutput=1
+
+
+\documentclass[twoside]{article}
+
+%\usepackage{aistats2024}
+% If your paper is accepted, change the options for the package
+% aistats2024 as follows:
+%
+\usepackage[accepted]{aistats2024}
+%
+% This option will print headings for the title of your paper and
+% headings for the authors names, plus a copyright note at the end of
+% the first column of the first page.
+
+% If you set papersize explicitly, activate the following three lines:
+%\special{papersize = 8.5in, 11in}
+%\setlength{\pdfpageheight}{11in}
+%\setlength{\pdfpagewidth}{8.5in}
+
+% If you use natbib package, activate the following three lines:
+%\usepackage[round]{natbib}
+%\renewcommand{\bibname}{References}
+%\renewcommand{\bibsection}{\subsubsection*{\bibname}}
+
+% If you use BibTeX in apalike style, activate the following line:
+%\bibliographystyle{apalike}
+
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+
+\usepackage{Sty/mcr}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\newtheorem{example}{Example}
+
+
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmed}{arg\,med}
+
+
+\newcommand{\htcomment}[1]{\begin{center}\fbox{\begin{minipage}{.4\textwidth}HT: #1\end{minipage}}\end{center}}
+
+\begin{document}
+
+% If your paper is accepted and the title of your paper is very long,
+% the style will print as headings an error message. Use the following
+% command to supply a shorter title of your paper so that it can be
+% used as headings.
+%
+\runningtitle{CAD-DA: Controllable Anomaly Detection after Domain Adaptation by Statistical Inference}
+
+% If your paper is accepted and the number of authors is large, the
+% style will print as headings an error message. Use the following
+% command to supply a shorter version of the authors names so that
+% they can be used as headings (for example, use only the surnames)
+%
+%\runningauthor{Surname 1, Surname 2, Surname 3, ...., Surname n}
+
+\twocolumn[
+
+\aistatstitle{CAD-DA: Controllable Anomaly Detection after \\ Domain Adaptation by Statistical Inference}
+
+\aistatsauthor{ Vo Nguyen Le Duy \And Hsuan-Tien Lin \And  Ichiro Takeuchi }
+
+\aistatsaddress{ RIKEN \And  National Taiwan University \And Nagoya University/RIKEN } ]
+
+\begin{abstract}
+\input{abst}
+\end{abstract}
+
+\input{sec1}
+\input{sec2}
+\input{sec3}
+\input{sec4}
+\input{sec5}
+
+
+
+%\bibliographystyle{abbrvnat}
+\bibliographystyle{abbrv}
+\bibliography{ref}
+
+%\section*{Checklist}
+%
+%
+%% %%% BEGIN INSTRUCTIONS %%%
+%%The checklist follows the references. For each question, choose your answer from the three possible options: Yes, No, Not Applicable.  You are encouraged to include a justification to your answer, either by referencing the appropriate section of your paper or providing a brief inline description (1-2 sentences). 
+%%Please do not modify the questions.  Note that the Checklist section does not count towards the page limit. Not including the checklist in the first submission won't result in desk rejection, although in such case we will ask you to upload it during the author response period and include it in camera ready (if accepted).
+%%
+%%\textbf{In your paper, please delete this instructions block and only keep the Checklist section heading above along with the questions/answers below.}
+%% %%% END INSTRUCTIONS %%%
+%
+%
+% \begin{enumerate}
+%
+%
+% \item For all models and algorithms presented, check if you include:
+% \begin{enumerate}
+%   \item A clear description of the mathematical setting, assumptions, algorithm, and/or model. [Yes]
+%   \item An analysis of the properties and complexity (time, space, sample size) of any algorithm. [Yes]
+%   \item (Optional) Anonymized source code, with specification of all dependencies, including external libraries. [Yes]
+% \end{enumerate}
+%
+%
+% \item For any theoretical claim, check if you include:
+% \begin{enumerate}
+%   \item Statements of the full set of assumptions of all theoretical results. [Yes]
+%   \item Complete proofs of all theoretical results. [Yes]
+%   \item Clear explanations of any assumptions. [Yes]     
+% \end{enumerate}
+%
+%
+% \item For all figures and tables that present empirical results, check if you include:
+% \begin{enumerate}
+%   \item The code, data, and instructions needed to reproduce the main experimental results (either in the supplemental material or as a URL). [Yes]
+%   \item All the training details (e.g., data splits, hyperparameters, how they were chosen). [Not Applicable]
+%         \item A clear definition of the specific measure or statistics and error bars (e.g., with respect to the random seed after running experiments multiple times). [Yes]
+%         \item A description of the computing infrastructure used. (e.g., type of GPUs, internal cluster, or cloud provider). [Yes]
+% \end{enumerate}
+%
+% \item If you are using existing assets (e.g., code, data, models) or curating/releasing new assets, check if you include:
+% \begin{enumerate}
+%   \item Citations of the creator If your work uses existing assets. [Yes]
+%   \item The license information of the assets, if applicable. [Yes]
+%   \item New assets either in the supplemental material or as a URL, if applicable. [Not Applicable]
+%   \item Information about consent from data providers/curators. [Not Applicable]
+%   \item Discussion of sensible content if applicable, e.g., personally identifiable information or offensive content. [Not Applicable]
+% \end{enumerate}
+%
+% \item If you used crowdsourcing or conducted research with human subjects, check if you include:
+% \begin{enumerate}
+%   \item The full text of instructions given to participants and screenshots. [Not Applicable]
+%   \item Descriptions of potential participant risks, with links to Institutional Review Board (IRB) approvals if applicable. [Not Applicable]
+%   \item The estimated hourly wage paid to participants and the total amount spent on participant compensation. [Not Applicable]
+% \end{enumerate}
+%
+% \end{enumerate}
+%
+
+\newpage
+\onecolumn
+%\aistatstitle{Instructions for Paper Submissions to AISTATS 2021: \\
+%Supplementary Materials}
+
+\input{appendix}
+
+
+\end{document}
+
+
+
